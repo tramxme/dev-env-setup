@@ -1,0 +1,9 @@
+" set up vim colorscheme
+colorscheme solarized
+set background=dark
+
+:iabbrev <// </<C-X><C-O>
+set omnifunc=syntaxcomplete#Complete
+set completefunc=syntaxcomplete#Complete
+au BufNewFile,BufRead *.ejs set filetype=html
+
