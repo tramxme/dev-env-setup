@@ -44,3 +44,6 @@ set guifont=Sauce\ Code\ Powerline\ Regular:h12
 let g:airline_theme="solarized"
 let g:airline_powerline_fonts=1
 set mouse=a
+ 
+"" Automatically delete blank upon save
+autocmd BufWritePre * :%s/\s\+$//e
