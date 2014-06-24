@@ -82,9 +82,18 @@ bindkey -v
 # Use Ctr-R in shell
 bindkey "^R" history-incremental-search-backward
 
-# From .bashrc
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Remove swp file
+alias rmswp='find . -name '\''*.swp'\'' -delete'
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Copy from .bash_profile
+alias irb="irb --simple-prompt"
+alias be="bundle exec"
+alias vim='mvim -v'
+
+export EDITOR="vim"
+export VISUAL="vim"
+export GIT_EDITOR=$EDITOR
+
+
+eval "$(rbenv init-)e"
 

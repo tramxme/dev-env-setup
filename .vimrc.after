@@ -7,3 +7,9 @@ set omnifunc=syntaxcomplete#Complete
 set completefunc=syntaxcomplete#Complete
 au BufNewFile,BufRead *.ejs set filetype=html
 
+" Fix yank and paste in tmux
+ if $TMUX == ''
+   set clipboard+=unnamed
+ endif
+
+
