@@ -1,48 +1,53 @@
-Download iterm
+# Step by step OS X dev env Setup 
 
-Install homebrew:
-  ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-  brew doctor #make sure everything ok
-  brew update #make sure everything is up to date
-  brew install rbenv ruby-build
+### 1. Download iterm [link here](http://www.iterm2.com/#/section/home)
+### 2. Install homebrew:
 
-Download xcode from appstore
+    $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+    $ brew doctor #make sure everything ok
+    $ brew update #make sure everything is up to date
+    $ brew install rbenv ruby-build
 
-Install Command Line Tools using homebrew:
-  xcode-select --install
+### 3. Download xcode from appstore
 
-Install macvim:
-  brew install macvim
+### 4. Install Command Line Tools using homebrew:
 
-Install janus (vim plugin):
-  curl -Lo- https://bit.ly/janus-bootstrap | bash
+    $ xcode-select --install
 
-For more plugins:
-  mkdir .janus
-  cd .janus
-  git clone https://github.com/whatever-plugins-you-want.git
+### 5. Install macvim:
 
-Install zshell:
-  curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
-| sh
+    $ brew install macvim
 
-Install tmux:
-  brew install tmux
-  brew install reattach-to-user-namespace
+### 6. Install janus (vim plugin):
+
+    $ curl -Lo- https://bit.ly/janus-bootstrap | bash
+#####Add more plugins:
+    $ mkdir .janus
+    $ cd .janus
+    $ git clone https://github.com/whatever-plugins-you-want.git
+    
+### 7. Install zshell:
 
 
+    $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+### 8. Install tmux:
+
+    $ brew install tmux
+    $ brew install reattach-to-user-namespace
+  
+  
 
 
-Setup:
-+ Vim Plugins:
+
+####Some vim Plugins:
   - Rainbow Parentheses
   - Emmit-vim
   - Vim-airline:
-     + cd .janus
-     + git clone https://github.com/bling/vim-airline.git
+     + Clone https://github.com/bling/vim-airline.git into .janus directory
      + Download font from https://github.com/Lokaltog/powerline-fonts
      + Select font in the font books
      + iterm > Preferences > Profiles > Text > Change Font (choose the
 downloaded one)
-     + Update .vimrc to use downloaded font
+     + Update .vimrc to use the downloaded font
 
