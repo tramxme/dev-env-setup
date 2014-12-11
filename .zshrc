@@ -90,10 +90,10 @@ alias irb="irb --simple-prompt"
 alias be="bundle exec"
 alias vim='mvim -v'
 
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="mvim"
+export VISUAL="mvim"
 export GIT_EDITOR=$EDITOR
 
 
-eval "$(rbenv init-)e"
+eval "$(rbenv init -)"
 
