@@ -50,4 +50,22 @@
      + iterm > Preferences > Profiles > Text > Change Font (choose the
 downloaded one)
      + Update .vimrc to use the downloaded font
+     
+
+# Setup Apache, PHP, PHPmyadmin
+    + Follow these [instructions] (https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
+    + Install mysql using homebrew:
+
+        $ brew update
+        $ brew doctor
+        $ brew upgrade
+        $ brew install mysql
+        $ touch /tmp/mysql.sock
+        $ mkdir /var/mysql
+        $ sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock
+        $ mysql.server.start
+        
+        
+         
+
 
