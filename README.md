@@ -53,7 +53,7 @@ downloaded one)
      
 
 # Setup Apache, PHP, PHPmyadmin
-    + Follow these [instructions] (https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
+    + Follow the instruction here: https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
     + Install mysql using homebrew:
 
         $ brew update
