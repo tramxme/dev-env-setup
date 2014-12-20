@@ -68,6 +68,12 @@ downloaded one)
         $ mysql.server.start
         
         
+Other links to check out 
+https://github.com/nicolashery/mac-dev-setup
+        
+
+
+        
          
 
 
