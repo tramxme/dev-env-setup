@@ -1,6 +1,6 @@
-""
 "" Janus setup
 ""
+
 " Define paths
 let g:janus_path = escape(fnamemodify(resolve(expand("<sfile>:p")), ":h"), ' ')
 let g:janus_vim_path = escape(fnamemodify(resolve(expand("<sfile>:p" . "vim")), ":h"), ' ')
@@ -32,24 +32,52 @@ exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
 ""
 
 " Load all groups, custom dir, and janus core
-if has('gui_running')
-  set background=dark
-else
-  set background=light
-endif
-
 call janus#load_pathogen()
+
+" .vimrc.after is loaded after the plugins have loaded
+
 set encoding=utf-8
 set guifont=Sauce\ Code\ Powerline\ Regular:h12
-let g:airline_theme="solarized"
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
-
-"" Turn on mouse
 set mouse=a
+set tabstop=3
 
 "" Automatically delete blank upon save
 autocmd BufWritePre * :%s/\s\+$//e
 
+set expandtab
+set shiftwidth=3
+set softtabstop=3
 set autoindent
 set smartindent
-syntax on
+set cindent
+
+" Rainbow parenthesis setup
+let g:rainbow_active = 1
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+let g:rbpt_colorpairs = [
+      \ ['brown',       'RoyalBlue3'],
+      \ ['darkgray',    'DarkOrchid3'],
+      \ ['darkgreen',   'firebrick3'],
+      \ ['darkcyan',    'RoyalBlue3'],
+      \ ['darkred',     'SeaGreen3'],
+      \ ['darkmagenta', 'DarkOrchid3'],
+      \ ['brown',       'firebrick3'],
+      \ ['gray',        'RoyalBlue3'],
+      \ ['black',       'SeaGreen3'],
+      \ ['darkmagenta', 'DarkOrchid3'],
+      \ ['Darkblue',    'firebrick3'],
+      \ ['darkgreen',   'RoyalBlue3'],
+      \ ['darkcyan',    'SeaGreen3'],
+      \ ['darkred',     'DarkOrchid3'],
+      \ ['red',         'firebrick3'],
+      \ ]
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+set backup
+set undofile
