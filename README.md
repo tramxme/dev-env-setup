@@ -34,11 +34,11 @@
 ### 8. Install tmux:
 
     $ brew install tmux
-    $ brew install reattach-to-user-namespace
+    $ brew install reattach-to-user-namespace #IMPORTANT
+ 
+ * Create .tmux.conf to configure tmux
+ * Run "tmux source .tmux.conf" to apply new changes to tmux
   
-  
-
-
 
 ####Some vim Plugins:
   - Rainbow Parentheses
@@ -49,7 +49,8 @@
      + Select font in the font books
      + iterm > Preferences > Profiles > Text > Change Font (choose the
 downloaded one)
-     + Update .vimrc to use the downloaded font
+     + Update .vimrc (and .gvimrc to apply to macvim - check the fontname) to use the downloaded font 
+     + When set colorscheme, make sure colorscheme is present in .janus/vim-airline/autoload/airline/themes (if not, download from the repo) 
      
 
 # Setup Apache, PHP, PHPmyadmin
