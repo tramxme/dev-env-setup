@@ -7,10 +7,6 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -26,8 +22,8 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to disable command auto-correction.
-# DISABLE_CORRECTION="true"
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -48,14 +44,16 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/tramlai/.rvm/gems/ruby-2.0.0-p195/bin:/Users/tramlai/.rvm/gems/ruby-2.0.0-p195@global/bin:/Users/tramlai/.rvm/rubies/ruby-2.0.0-p195/bin:/Users/tramlai/.rvm/bin:/Users/tramlai/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin:/Users/tramlai/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tram/Library/Android/sdk/tools:/Users/tram/Library/Android/sdk/platform-tools"
+
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -73,12 +71,9 @@ export PATH="/Users/tramlai/.rvm/gems/ruby-2.0.0-p195/bin:/Users/tramlai/.rvm/ge
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-
-# # $PATH
-# This puts homebrew packages first in path
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Use vi-mode in your shell
 bindkey -v
+
 # Use Ctr-R in shell
 bindkey "^R" history-incremental-search-backward
 
@@ -89,11 +84,13 @@ alias rmswp='find . -name '\''*.swp'\'' -delete'
 alias irb="irb --simple-prompt"
 alias be="bundle exec"
 alias vim='mvim -v'
+alias python="python3" #Always use python3
 
 export EDITOR="mvim"
 export VISUAL="mvim"
 export GIT_EDITOR=$EDITOR
+export PYTHONPATH="/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages"
 
 
 eval "$(rbenv init -)"
-
+export PATH="/usr/local/sbin:$PATH"
