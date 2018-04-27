@@ -40,7 +40,9 @@ set encoding=utf-8
 set guifont=Sauce\ Code\ Powerline\ Regular:h12
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
-set mouse=a
+set mouse+=a
+set ttymouse=xterm2
+
 set tabstop=3
 
 "" Automatically delete blank upon save
