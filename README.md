@@ -1,7 +1,7 @@
 # Step by step OS X dev env Setup 
 
-### 1. Download iterm [link here](http://www.iterm2.com/#/section/home)
-### 2. Install homebrew: [link here](https://brew.sh/)
+### 1. Download [iterm2](http://www.iterm2.com/#/section/home)
+### 2. Install [homebrew](https://brew.sh/)
 After having homebrew installed, run: 
     $ brew doctor #To make sure everything ok
     $ brew update #To make sure everything is up to date
@@ -27,7 +27,7 @@ After having homebrew installed, run:
     $ git clone https://github.com/whatever-plugins-you-want.git
     
     
-### 7. Install oh-my-zsh, a type of zsh to replace bash [link here](https://github.com/robbyrussell/oh-my-zsh):
+### 7. Install oh-my-zsh, a type of zsh to replace bash [link here](https://github.com/robbyrussell/oh-my-zsh)
 ### 8. Install tmux:
 
     $ brew install tmux
