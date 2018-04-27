@@ -1,16 +1,14 @@
 # Step by step OS X dev env Setup 
 
 ### 1. Download iterm [link here](http://www.iterm2.com/#/section/home)
-### 2. Install homebrew:
-
-    $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-    $ brew doctor #make sure everything ok
-    $ brew update #make sure everything is up to date
-    $ brew install rbenv ruby-build
+### 2. Install homebrew: [link here](https://brew.sh/)
+After having homebrew installed, run: 
+    $ brew doctor #To make sure everything ok
+    $ brew update #To make sure everything is up to date
 
 ### 3. Download xcode from appstore
 
-### 4. Install Command Line Tools using homebrew:
+### 4. Install Command Line Tools:
 
     $ xcode-select --install
 
@@ -21,16 +19,15 @@
 ### 6. Install janus (vim plugin):
 
     $ curl -Lo- https://bit.ly/janus-bootstrap | bash
+    
 #####Add more plugins:
+
     $ mkdir .janus
     $ cd .janus
     $ git clone https://github.com/whatever-plugins-you-want.git
     
-### 7. Install zshell:
-
-
-    $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-
+    
+### 7. Install oh-my-zsh, a type of zsh to replace bash [link here](https://github.com/robbyrussell/oh-my-zsh):
 ### 8. Install tmux:
 
     $ brew install tmux
@@ -52,6 +49,11 @@ downloaded one)
      + Update .vimrc (and .gvimrc to apply to macvim - check the fontname) to use the downloaded font 
      + When set colorscheme, make sure colorscheme is present in .janus/vim-airline/autoload/airline/themes (if not, download from the repo) 
      
+####Notes: 
+- To change the appearance of iterm2, go to iterm2 > Preferences > Profile > Colors, go to the bottom right corner and select the theme you want (in my case "Solarized Dark"), if it doesn't exist, go downtown someTheme.itermcolors and then import and set it)
+- If you want to copy and paste from your terminal (iterm2), go to iterm2 > Preferences > General, in "Selection", check the option "Copy to pasteboard on selection" and "Applications in terminal my access clipboard". 
+- Download [Karabiner](https://pqrs.org/osx/karabiner/index.html) for key mapping. Complex rules can be found here [link here](https://pqrs.org/osx/karabiner/complex_modifications/)
+     
 
 # Setup Apache, PHP, PHPmyadmin
 
@@ -71,10 +73,3 @@ downloaded one)
         
 Other links to check out 
 https://github.com/nicolashery/mac-dev-setup
-        
-
-
-        
-         
-
-
