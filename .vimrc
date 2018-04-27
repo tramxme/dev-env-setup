@@ -81,3 +81,7 @@ let g:rbpt_loadcmd_toggle = 0
 
 set backup
 set undofile
+
+
+"" Copy to clipboard
+set clipboard=unnamed
