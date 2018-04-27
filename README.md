@@ -54,12 +54,13 @@ After having homebrew installed, run:
 - If you want to copy and paste from your terminal (iterm2), go to iterm2 > Preferences > General, in "Selection", check the option "Copy to pasteboard on selection" and "Applications in terminal my access clipboard". 
 - Download [Karabiner](https://pqrs.org/osx/karabiner/index.html) for key mapping. Complex rules can be found [here](https://pqrs.org/osx/karabiner/complex_modifications/)
      
+------------------------------------
 
 # Setup Apache, PHP, PHPmyadmin
 
-####Follow the instructions [here] (https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
+#### Follow the instructions [here](https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
 
-####Install mysql using homebrew:
+#### Install mysql using homebrew:
 
         $ brew update
         $ brew doctor
